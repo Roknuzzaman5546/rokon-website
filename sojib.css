@@ -3,14 +3,39 @@
     padding: 0;
 }
 .menu{
-     display: inline-block;
+     
 }
 .menu ul{
-   
-}
+    text-align: center;
+    text-decoration: none;
+ }
 .menu ul li{
-   
+   display: inline-block;
+   background-color: aqua;
+   padding: 15px 70px;
+   margin: -5px;
+   border: 1px solid red;
+   transition: 0.7s;
 }
 .menu ul li a{
-
+    text-decoration: none;
+}
+.menu ul li:hover{
+    background-color: rgb(46, 105, 105);
+}
+/* drop down menu */
+.menu ul li{
+    position: relative;
+}
+.menu ul li ul{
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 20px;
+}
+.menu ul li ul li{
+    display: block;
+}
+.menu ul li ul li a{
+    display: block;
 }
